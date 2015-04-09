@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 4
 SUBLEVEL = 0
-EXTRAVERSION = -nitrogen-kernel-v17
+EXTRAVERSION = -rk-kernel-v17
 NAME = Saber-toothed Squirrel
 
 # *DOCUMENTATION*
