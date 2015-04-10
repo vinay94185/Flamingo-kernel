@@ -396,6 +396,9 @@ obj-$(CONFIG_MSM_RTB) += msm_rtb.o
 obj-$(CONFIG_MSM_CACHE_ERP) += cache_erp.o
 obj-$(CONFIG_MSM_EBI_ERP) += ebi_erp.o
 obj-$(CONFIG_MSM_CACHE_DUMP) += msm_cache_dump.o
+#fastcharge BEGIN
+obj-$(CONFIG_FORCE_FAST_CHARGE) += fastchg.o
+#fastchareg END
 # [All][Main][power][DMS][34038][Raymond Lin] Add SONY Feature 17920 Stamina mode patch BEGIN
 obj-$(CONFIG_SONY_SSM) += sony_ssm.o
 # [All][Main][power][DMS][34038][Raymond Lin] Add SONY Feature 17920 Stamina mode patch END

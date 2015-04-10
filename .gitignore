@@ -9,3 +9,4 @@
 *.tmp_versions/
 *.missing-syscalls.d
 *.config.old
+*zimage
