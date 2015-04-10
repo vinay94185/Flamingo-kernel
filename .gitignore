@@ -1,1 +1,11 @@
 *.o
+*.cmd
+*modules.builtin
+*modules.order
+*vmlinux
+*.dtb
+*.tmp_vmlinux1
+*.tmp_vmlinux2
+*.tmp_versions/
+*.missing-syscalls.d
+*.config.old
