@@ -9,12 +9,7 @@ vmlinux
 *.tmp_versions/
 *.missing-syscalls.d
 */.config.old
-arch/arm/boot/zImage
 *Module.symvers
-arch/arm/boot/Image
-arch/arm/boot/compressed/piggy.lzo
-arch/arm/boot/compressed/vmlinux
-arch/arm/boot/zImage
 .tmp_System.map
 *.tmp_kallsyms1.S
 *.tmp_kallsyms2.S
@@ -28,6 +23,10 @@ arch/arm/mach-msm/msm-buspm-dev.mod.c
 arch/arm/mach-msm/reset_modem.ko
 arch/arm/mach-msm/reset_modem.mod.c
 arch/arm/oprofile/oprofile.ko
+arch/arm/boot/Image
+arch/arm/boot/compressed/piggy.lzo
+arch/arm/boot/compressed/vmlinux
+arch/arm/boot/zImage
 arch/arm/oprofile/oprofile.mod.c
 block/test-iosched.ko
 block/test-iosched.mod.c
