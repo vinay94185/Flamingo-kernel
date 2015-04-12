@@ -92,8 +92,13 @@ config CPU_FREQ_DEFAULT_GOV_INTELLIACTIVE
 	bool "intelliactive"
 	select CPU_FREQ_GOV_INTELLIACTIVE
 	help
-	  this is a custom governor
-	  if in doubt, say Y.
+	  use the CPUfreq governor 'intelliactive' as default.
+
+config CPU_FREQ_DEFAULT_GOV_LIONHEART
+	bool "lionheart"
+	select CPU_FREQ_GOV_LIONHEART
+	help
+	  use the CPUfreq governor 'lionheart' as default.
 
 config CPU_FREQ_DEFAULT_GOV_CONSERVATIVE
 	bool "conservative"
@@ -182,8 +187,22 @@ config CPU_FREQ_GOV_ONDEMAND
 config CPU_FREQ_GOV_INTELLIACTIVE
 	tristate "'intelliactive' cpufreq policy governor"
 	help
-	  intelliactive is a custom governor! if in doubt say Y.
+	  Based off Google's Interactive governor with the following enhancements:
 
+	  1. self-boost capability from input drivers (no need for PowerHAL assist)
+	  2. two phase scheduling (idle/busy phases to prevent from jumping directly to max freq
+	  3. Checks for offline cpus and short circuits some unnecessary checks to improve code 
+	  execution paths
+
+
+config CPU_FREQ_GOV_LIONHEART
+	tristate "'lionheart' cpufreq governor
+	help
+	  Lionheart is a conservative-based governor which is based on samsung's update3 source.
+	  The tunables (such as the thresholds and sampling rate) were changed so the governor
+	  behaves more like the performance one, at the cost of battery as the scaling is very
+	  aggressive.
+	  
 
 config CPU_FREQ_GOV_INTERACTIVE
 	tristate "'interactive' cpufreq policy governor"
@@ -229,7 +248,8 @@ config CPU_FREQ_GOV_WHEATLEY
 	tristate "'wheatly' cpufreq governor
 	depends on CPU_FREQ
 	help
-	  'wheatly' - a "wheathley" optimized governor!.
+	  in short words this govenor is build on “ondemand” but increases
+	  the C4 state time of the CPU and doing so trying to save juice.
 
 menu "x86 CPU frequency scaling drivers"
 depends on X86
