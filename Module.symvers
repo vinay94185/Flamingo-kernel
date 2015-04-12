@@ -1896,6 +1896,7 @@
 0x08980592	jbd2__journal_restart	vmlinux	EXPORT_SYMBOL
 0xbef43296	console_conditional_schedule	vmlinux	EXPORT_SYMBOL
 0xece30d4b	snd_unregister_device	vmlinux	EXPORT_SYMBOL
+0x55ce94ff	intellidemand_boost_cpu	vmlinux	EXPORT_SYMBOL
 0xa3f9ecab	vb2_mmap_pfn_range	vmlinux	EXPORT_SYMBOL_GPL
 0x79735887	blkdev_issue_discard	vmlinux	EXPORT_SYMBOL
 0xb89c8d0e	crypto_unregister_pcomp	vmlinux	EXPORT_SYMBOL_GPL

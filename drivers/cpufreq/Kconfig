@@ -88,14 +88,13 @@ config CPU_FREQ_DEFAULT_GOV_ONDEMAND
 	  governor. If unsure have a look at the help section of the
 	  driver. Fallback governor will be the performance governor.
 
-config CPU_FREQ_GOV_ONDEMANDX_INPUT
-	bool "ondemandx"
-	select CPU_FREQ_GOV_ONDEMANDX
-	select CPU_FREQ_GOV_PERFORMANCE
+config CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND
+	bool "intellidemand"
+	select CPU_FREQ_GOV_INTELLIDEMAND
+	select CPU_FREQ_GOV_PERFORMANCE	
 	help
-	  Enable installation of an input event handler which 
-          will ramp up thev CPU to max frequency when an 
-	  input event is received.
+	  this is a custom governor
+	  if in doubt, say Y.
 
 config CPU_FREQ_DEFAULT_GOV_CONSERVATIVE
 	bool "conservative"
@@ -175,11 +174,10 @@ config CPU_FREQ_GOV_ONDEMAND
 
 	  If in doubt, say N.
 
-config CPU_FREQ_GOV_ONDEMANDX
-        tristate "'ondemandx' cpufreq policy governor"
-        select CPU_FREQ_TABLE
-        help
-          governor' - a custom governor! if in doubt, say Y.
+config CPU_FREQ_GOV_INTELLIDEMAND
+	tristate "'intellidemand' cpufreq policy governor"
+	help
+	  intellidemand is a custom governor! if in doubt say Y.
 
 config CPU_FREQ_GOV_INTERACTIVE
 	tristate "'interactive' cpufreq policy governor"
