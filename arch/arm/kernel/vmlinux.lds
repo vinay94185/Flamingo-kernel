@@ -1,7 +1,7 @@
 /*
  *
  * Automatically generated file; DO NOT EDIT.
- * Linux/arm 3.4.0-rk-kernel-v17 Kernel Configuration
+ * Linux/arm 3.4.0_NITROGEN_KK Kernel Configuration
  *
  */
 /*
