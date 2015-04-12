@@ -565,10 +565,8 @@ CONFIG_INET_XFRM_MODE_TUNNEL=y
 CONFIG_INET_XFRM_MODE_BEET=y
 CONFIG_INET_AH=y
 CONFIG_INET_ESP=y
+CONFIG_FORCE_FAST_CHARGE=y
 # [All][Main][System][DMS][33782]Enable Android VPN - KenHsu 20140213 End
 # [All][Main][power][DMS][34038][Raymond Lin] Add SONY Feature 17920 Stamina mode patch BEGIN
 CONFIG_SONY_SSM=y
 # [All][Main][power][DMS][34038][Raymond Lin] Add SONY Feature 17920 Stamina mode patch END
-#//<2014/04/18-36561-EricLin, [All][Main][S1][] Add RIC function.
-CONFIG_SECURITY_SONY_RIC=y
-#//>2014/04/18-36561-EricLin
