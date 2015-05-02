@@ -3782,6 +3782,7 @@
 0xe9c061f4	scsi_get_device_flags_keyed	vmlinux	EXPORT_SYMBOL
 0x19f75c43	device_show_int	vmlinux	EXPORT_SYMBOL_GPL
 0x79ddf32b	kgsl_pwrctrl_irq	vmlinux	EXPORT_SYMBOL
+0xd07e41dc	erandom_get_random_bytes	vmlinux	EXPORT_SYMBOL
 0x36debd54	blk_fetch_request	vmlinux	EXPORT_SYMBOL
 0x5cae098e	free_inode_nonrcu	vmlinux	EXPORT_SYMBOL
 0xa7ab2bd6	dma_pool_create	vmlinux	EXPORT_SYMBOL
