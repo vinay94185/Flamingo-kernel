@@ -576,3 +576,6 @@ CONFIG_FORCE_FAST_CHARGE=y
 # [All][Main][power][DMS][34038][Raymond Lin] Add SONY Feature 17920 Stamina mode patch BEGIN
 CONFIG_SONY_SSM=y
 # [All][Main][power][DMS][34038][Raymond Lin] Add SONY Feature 17920 Stamina mode patch END
+CONFIG_KEXEC=y
+CONFIG_KEXEC_HARDBOOT=y
+CONFIG_ATAGS_PROC=n

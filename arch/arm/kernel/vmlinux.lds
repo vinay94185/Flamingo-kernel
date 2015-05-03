@@ -370,6 +370,7 @@
  *
  */
 /* physical offset of RAM */
+/*#define KEXEC_HB_KERNEL_LOC		UL(0x5000000)*/
 /* Maximum number of Memory Regions
 *  The largest system can have 4 memory banks, each divided into 8 regions
 */
