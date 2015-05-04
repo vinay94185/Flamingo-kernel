@@ -10,7 +10,10 @@ vmlinux
 *.tmp_versions/
 *.missing-syscalls.d
 */.config.old
+.old_version
 * Module.symvers
+include/config/crash/
+include/config/proc/vmcore.h
 .tmp_System.map
 *.tmp_kallsyms1.S
 *.tmp_kallsyms2.S
