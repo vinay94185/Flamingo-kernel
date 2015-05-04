@@ -302,7 +302,6 @@ config ARCH_RANDOM
 source "init/Kconfig"
 
 source "kernel/Kconfig.freezer"
-source "arch/arm/hotplug/Kconfig"
 
 menu "System Type"
 
@@ -1493,6 +1492,7 @@ config KSAPI
 endmenu
 
 source "arch/arm/common/Kconfig"
+source "arch/arm/hotplug/Kconfig"
 
 menu "Bus support"
 
