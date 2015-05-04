@@ -1,6 +1,7 @@
 *.o
 *.cmd
 *modules.builtin
+*.symvers
 *modules.order
 vmlinux
 *.dtb
@@ -9,7 +10,7 @@ vmlinux
 *.tmp_versions/
 *.missing-syscalls.d
 */.config.old
-*Module.symvers
+* Module.symvers
 .tmp_System.map
 *.tmp_kallsyms1.S
 *.tmp_kallsyms2.S
