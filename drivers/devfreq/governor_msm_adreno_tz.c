@@ -83,7 +83,7 @@ static void _update_cutoff(struct devfreq_msm_adreno_tz_data *priv,
 #ifdef CONFIG_SIMPLE_GPU_ALGORITHM
 extern int simple_gpu_active;
 extern int simple_gpu_algorithm(int level,
-				struct devfreq_msm_adreno_tz_data priv);
+				struct devfreq_msm_adreno_tz_data * /*priv*/);
 #endif
 
 static int tz_get_target_freq(struct devfreq *devfreq, unsigned long *freq,
