@@ -98,4 +98,10 @@ security/selinux/flask.h
 usr/.initramfs_data.cpio.d
 usr/gen_init_cpio
 usr/initramfs_data.cpio
+include/config/bsp/hw/b/
+include/config/bsp/hw/sku/8926ds.h
+include/config/cpu/freq/default/gov/performance.h
+include/config/isdbt/
+include/config/kernel/lzo.h
+include/config/sku/
 
