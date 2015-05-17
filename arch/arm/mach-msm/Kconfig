@@ -3230,12 +3230,14 @@ config MSM_CACHE_DUMP_ON_PANIC
 	  want to dump the L1 and L2 caches on panic before any flush occurs.
 	  If unsure, say N
 
+# fastcharge BEGIN
 config FORCE_FAST_CHARGE
-	bool "Force AC charge mode at will"
-	default y
-	help
-	  A simple sysfs interface to force adapters that
-	  are detected as USB to charge as AC.
+       bool "Force AC charge mode at will"
+        default y
+        help
+         A simple sysfs interface to force adapters that
+         are detected as USB to charge as AC.
+# fastcharge END
 
 # [All][Main][power][DMS][34038][Raymond Lin] Add SONY Feature 17920 Stamina mode patch BEGIN	  
 config SONY_SSM
