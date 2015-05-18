@@ -1435,22 +1435,6 @@ static void msm_otg_notify_charger(struct msm_otg *motg, unsigned mA)
 
 	dev_info(motg->phy.dev, "Avail curr from USB = %u\n", mA);
 
-#ifdef CONFIG_FORCE_FAST_CHARGE
-	if (force_fast_charge == 1) {
-// DooMLoRD: dont override charging current if available current is greater
-		if (mA >= USB_FASTCHG_LOAD){
-			pr_info("Available current already greater than USB fastcharging current!!!\n");
-			pr_info("Override of USB charging current cancelled.\n");
-			} else {
-				mA = USB_FASTCHG_LOAD;
-				pr_info("USB fast charging is ON!!!\n");
-			}
-				dev_info(motg->phy.dev, "Avail curr from USB = %u\n", mA);
-			} else {
-			pr_info("USB fast charging is OFF.\n");
-		}
-#endif
-
 	/*
 	 *  Use Power Supply API if supported, otherwise fallback
 	 *  to legacy pm8921 API.
@@ -2479,7 +2463,6 @@ static void msm_chg_detect_work(struct work_struct *w)
 		msm_chg_enable_aca_intr(motg);
 		dev_dbg(phy->dev, "chg_type = %s\n",
 			chg_to_string(motg->chg_type));
-
 #ifdef CONFIG_FORCE_FAST_CHARGE
 		 switch (motg->chg_type) {
 		 case USB_SDP_CHARGER: USB_porttype_detected = USB_SDP_DETECTED;
