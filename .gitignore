@@ -104,4 +104,6 @@ include/config/cpu/freq/default/gov/performance.h
 include/config/isdbt/
 include/config/kernel/lzo.h
 include/config/sku/
+include/config/cpu/boost.h
+
 
