@@ -240,6 +240,9 @@ static void get_speed_bin(struct platform_device *pdev, int *bin, int *version)
 	valid = (pte_efuse >> 3) & 0x1;
 	*version = (pte_efuse >> 4) & 0x3;
 
+	if (redundant_sel == 1)
+		*bin = (pte_efuse >> 27) & 0x7;
+
 #ifdef CONFIG_CPU_OVERCLOCK
 	dev_info(&pdev->dev, "Speed bin being set to 1 for overclock!\n");
 	*bin = 1;
