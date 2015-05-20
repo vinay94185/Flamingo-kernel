@@ -69,10 +69,10 @@ static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p1[] = {
 	{ 1,  300000, PLL0,    4, 2,   CPR_CORNER_2,      0, 3 },
 	{ 1,  384000, ACPUPLL, 5, 2,   CPR_CORNER_2,      0, 4 },
 	{ 1,  499000, PLL0,    4, 0,   CPR_CORNER_4,   0, 5 },
-	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 6 },
-	{ 1,  787200, ACPUPLL, 5, 0,   CPR_CORNER_4,   0, 7 },
-	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 8 },
-	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 8 },
+	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 5 },
+	{ 1,  787200, ACPUPLL, 5, 0,   CPR_CORNER_4,   0, 6 },
+	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 6 },
+	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 9 },
 	{ 1, 1190400, ACPUPLL, 5, 0,   CPR_CORNER_12,    0, 9 },
  	{ 0 }
  };
@@ -85,10 +85,10 @@ static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p2[] = {
 	{ 1,  300000, PLL0,    4, 2,   CPR_CORNER_2,      0, 3 },
 	{ 1,  384000, ACPUPLL, 5, 2,   CPR_CORNER_2,      0, 4 },
 	{ 1,  499000, PLL0,    4, 0,   CPR_CORNER_4,   0, 5 },
-	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 6 },
+	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 5 },
 	{ 1,  787200, ACPUPLL, 5, 0,   CPR_CORNER_4,   0, 6 },
-	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 7 },
-	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 8 },
+	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 6 },
+	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 9 },
 	{ 1, 1190400, ACPUPLL, 5, 0,   CPR_CORNER_12,    0, 9 },
 	{ 0 }
 };
@@ -101,10 +101,10 @@ static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p4[] = {
 	{ 1,  300000, PLL0,    4, 2,   CPR_CORNER_2,      0, 3 },
 	{ 1,  384000, ACPUPLL, 5, 2,   CPR_CORNER_2,      0, 4 },
 	{ 1,  499000, PLL0,    4, 0,   CPR_CORNER_4,   0, 5 },
-	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 6 },
+	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 5 },
 	{ 1,  787200, ACPUPLL, 5, 0,   CPR_CORNER_4,   0, 6 },
-	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 7 },
-	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_6,    0, 8 },
+	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 6 },
+	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_6,    0, 9 },
 	{ 1, 1190400, ACPUPLL, 5, 0,   CPR_CORNER_12,    0, 9 },
 	{ 1, 1305600, ACPUPLL, 5, 0,   CPR_CORNER_12,    0, 9 },
 	{ 1, 1344000, ACPUPLL, 5, 0,   CPR_CORNER_12,    0, 9 },
@@ -120,10 +120,10 @@ static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p6[] = {
 	{ 1,  300000, PLL0,    4, 2,   CPR_CORNER_2,      0, 3 },
 	{ 1,  384000, ACPUPLL, 5, 2,   CPR_CORNER_2,      0, 4 },
 	{ 1,  499000, PLL0,    4, 0,   CPR_CORNER_4,   0, 5 },
-	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 6 },
+	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 5 },
 	{ 1,  787200, ACPUPLL, 5, 0,   CPR_CORNER_4,   0, 6 },
-	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 7 },
-	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_6,    0, 8 },
+	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_5,    0, 6 },
+	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_6,    0, 9 },
 	{ 1, 1190400, ACPUPLL, 5, 0,   CPR_CORNER_7,    0, 9 },
 	{ 1, 1305600, ACPUPLL, 5, 0,   CPR_CORNER_8,    0, 9 },
 	{ 1, 1344000, ACPUPLL, 5, 0,   CPR_CORNER_9,    0, 9 },
@@ -145,11 +145,13 @@ static struct clkctl_acpu_speed acpu_freq_tbl_8610[] = {
 };
 
 static struct clkctl_acpu_speed *pvs_tables_8226[NUM_SPEED_BIN] = {
- 	[2] = acpu_freq_tbl_8226_1p4,
- 	[5] = acpu_freq_tbl_8226_1p4,
- 	[4] = acpu_freq_tbl_8226_1p4,
-	[7] = acpu_freq_tbl_8226_1p6,
- 	[1] = acpu_freq_tbl_8226_1p6,
+	[0] = acpu_freq_tbl_8226_1p2,
+	[6] = acpu_freq_tbl_8226_1p2,
+	[2] = acpu_freq_tbl_8226_1p4,
+	[5] = acpu_freq_tbl_8226_1p4,
+	[4] = acpu_freq_tbl_8226_1p4,
+	[7] = acpu_freq_tbl_8226_1p4,
+	[1] = acpu_freq_tbl_8226_1p6,
 };
 
 static struct acpuclk_drv_data drv_data = {
