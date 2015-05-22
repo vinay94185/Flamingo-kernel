@@ -244,8 +244,8 @@ static void get_speed_bin(struct platform_device *pdev, int *bin, int *version)
 		*bin = (pte_efuse >> 27) & 0x7;
 
 #ifdef CONFIG_CPU_OVERCLOCK
-	dev_info(&pdev->dev, "Speed bin being set to 1 for overclock!\n");
-	*bin = 1;
+	dev_info(&pdev->dev, "Speed bin being set to 2 for overclock!\n");
+	*bin = 2;
 #else
 
 	if (!valid) {
