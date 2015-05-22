@@ -105,5 +105,7 @@ include/config/isdbt/
 include/config/kernel/lzo.h
 include/config/sku/
 include/config/cpu/boost.h
+include/config/wq/
+
 
 
