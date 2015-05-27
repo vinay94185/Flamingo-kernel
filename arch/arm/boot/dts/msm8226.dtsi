@@ -1041,21 +1041,18 @@
 		reg = <0 5>;
 		compatible = "qcom,msm-cpufreq";
 		qcom,cpufreq-table =
-			<  192000 1525 >,
-			<  249600 1525 >,
-			<  300000 2441 >,
-			<  384000 2441 >,
-			<  499000 3051 >,
-			<  600000 3051 >,
+			<  192000 1014 >,
+			<  249600 1014 >,
+			<  300000 1525 >,
+			<  384000 1525 >,
+			<  499000 2441 >,
+			<  600000 2441 >,
 			<  787200 3051 >,
-			<  998400 4066 >,
+			<  998400 3051 >,
 			< 1094400 4066 >,
-			< 1190400 4575 >,
+			< 1190400 4066 >,
 			< 1305600 4575 >,
-			< 1344000 4575 >,
-			< 1401600 4575 >,
-			< 1497600 4575 >,
-			< 1593600 4575 >;
+			< 1344000 4575 >;
 	};
 
 	qcom,ocmem@fdd00000 {
@@ -1187,11 +1184,11 @@
 		compatible = "qcom,msm-thermal";
 		qcom,sensor-id = <0>;
 		qcom,poll-ms = <250>;
-		qcom,limit-temp = <75>;
+		qcom,limit-temp = <65>;
 		qcom,temp-hysteresis = <10>;
 		qcom,freq-step = <2>;
 		qcom,freq-control-mask = <0xf>;
-		qcom,core-limit-temp = <90>;
+		qcom,core-limit-temp = <85>;
 		qcom,core-temp-hysteresis = <10>;
 		qcom,core-control-mask = <0xe>;
 		qcom,hotplug-temp = <110>;
