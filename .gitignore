@@ -108,5 +108,7 @@ include/config/cpu/boost.h
 include/config/wq/
 arch/arm/kernel/vmlinux.lds
 include/config/quad/
+include/config/localversion/auto.h
+
 
 
