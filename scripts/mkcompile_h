@@ -53,7 +53,7 @@ fi
 if test -z "$KBUILD_BUILD_HOST"; then
 # [All][Main][SI][DMS][44408][akenhsu] Fix the builder and build machine avoiding 'arima' in kernel version 20140926 BEGIN
 #	LINUX_COMPILE_HOST=`hostname`
-	LINUX_COMPILE_HOST=`echo ubuntu-aspire-E1-531`
+	LINUX_COMPILE_HOST=`echo XDA`
 # [All][Main][SI][DMS][44408][akenhsu] 20140926 END
 else
 	LINUX_COMPILE_HOST=$KBUILD_BUILD_HOST
