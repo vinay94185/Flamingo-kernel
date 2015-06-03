@@ -110,5 +110,6 @@ arch/arm/kernel/vmlinux.lds
 include/config/quad/
 include/config/localversion/auto.h
 scripts/
+include/config/ksm.h
 
 
