@@ -317,7 +317,6 @@ enum oom_scan_t oom_scan_process_thread(struct task_struct *task,
 		 */
 		if (!(task->group_leader->ptrace & PT_TRACE_EXIT))
 			return OOM_SCAN_ABORT;
-		}
 	}
 	return OOM_SCAN_OK;
 }
