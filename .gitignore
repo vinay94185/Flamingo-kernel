@@ -113,5 +113,6 @@ scripts/
 include/config/ksm.h
 include/config/cpu/freq/gov/
 include/config/sound/
+include/config/powersuspend.h
 
 
