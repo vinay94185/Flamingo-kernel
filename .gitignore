@@ -112,5 +112,6 @@ include/config/localversion/auto.h
 scripts/
 include/config/ksm.h
 include/config/cpu/freq/gov/
+include/config/sound/
 
 
