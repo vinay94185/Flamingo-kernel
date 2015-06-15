@@ -1,6 +1,6 @@
 VERSION = 3
 PATCHLEVEL = 4
-SUBLEVEL = 2
+SUBLEVEL = 4
 EXTRAVERSION = _Nitrogen
 NAME = Saber-toothed Squirrel
 
