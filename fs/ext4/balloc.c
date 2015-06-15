@@ -89,8 +89,8 @@ unsigned ext4_num_overhead_clusters(struct super_block *sb,
 	 * case handling shouldn't be necessary except for *very*
 	 * unusual file system layouts.
 	 */
-	if (ext4_block_in_group(sb, ext4_block_bitmap(sb, gdp), block_group)) {
-		block_cluster = EXT4_B2C(sbi,
+if (ext4_block_in_group(sb, ext4_block_bitmap(sb, gdp), block_group)) {
+	block_cluster = EXT4_B2C(sbi,
 					 ext4_block_bitmap(sb, gdp) - start);
 		if (block_cluster < num_clusters)
 			block_cluster = -1;
