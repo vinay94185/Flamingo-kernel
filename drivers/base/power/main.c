@@ -1069,7 +1069,7 @@ static int __device_suspend(struct device *dev, pm_message_t state, bool async)
 	dpm_wait_for_children(dev, async);
 
 	if (async_error)
-		goto Complete;
+		return 0;
 
 	/*
 	 * If a device configured to wake up the system from sleep states
@@ -1082,7 +1082,7 @@ static int __device_suspend(struct device *dev, pm_message_t state, bool async)
 
 	if (pm_wakeup_pending()) {
 		async_error = -EBUSY;
-		goto Complete;
+		return 0;
 	}
 
 	data.dev = dev;
