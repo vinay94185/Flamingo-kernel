@@ -116,7 +116,6 @@ include/config/sound/
 include/config/powersuspend.h
 include/config/cpu/overclock.h
 include/config/default/cfq.h
-
-
+*.orig
 
 
